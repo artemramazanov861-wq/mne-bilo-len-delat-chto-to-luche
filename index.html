@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Космический сборщик</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1><i class="fas fa-rocket"></i> Космический сборщик</h1>
+            <div class="stats">
+                <div class="score">Очки: <span id="score">0</span></div>
+                <div class="lives">Жизни: <span id="lives">3</span></div>
+                <div class="level">Уровень: <span id="level">1</span></div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="player" id="player">
+                <i class="fas fa-rocket"></i>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-btn left-btn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="control-btn right-btn">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="start-btn" class="action-btn">
+                <i class="fas fa-play"></i> Старт
+            </button>
+            <button id="pause-btn" class="action-btn">
+                <i class="fas fa-pause"></i> Пауза
+            </button>
+            <button id="reset-btn" class="action-btn">
+                <i class="fas fa-redo"></i> Заново
+            </button>
+        </div>
+        
+        <div class="instructions">
+            <h3>Как играть:</h3>
+            <p>Собирай падающие звезды <i class="fas fa-star"></i> для очков.</p>
+            <p>Избегай астероидов <i class="fas fa-meteor"></i> - они отнимают жизнь.</p>
+            <p>Управляй кораблем с помощью кнопок влево/вправо.</p>
+            <p>Каждые 10 очков повышается уровень и скорость игры.</p>
+        </div>
+        
+        <div class="game-over" id="game-over">
+            <h2>Игра окончена!</h2>
+            <p>Ваш результат: <span id="final-score">0</span></p>
+            <button id="restart-btn" class="action-btn">
+                <i class="fas fa-play"></i> Играть снова
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
